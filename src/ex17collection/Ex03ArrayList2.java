@@ -56,7 +56,7 @@ public class Ex03ArrayList2 {
 		boolean removeOk = list2.remove(st2); //원빈삭제
 		
 		//정상적으로 삭제되었다면 true를 반환한다.
-		System.out.println("인스턴스를 토아한 삭제 : " + removeOk );
+		System.out.println("인스턴스를 통한 삭제 : " + removeOk );
 		
 		/*
 		  List에 저장된 값을 통해 이터레이터 인스턴스를 생성한다.

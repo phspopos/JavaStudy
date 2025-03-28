@@ -22,5 +22,15 @@ public class Student extends Person{
 		 */
 		return super.toString() + ", 학번 : " + stNumber;
 	}
+
+	public String getStNumber() {
+		return stNumber;
+	}
+
+	public void setStNumber(String stNumber) {
+		this.stNumber = stNumber;
+	}
+	
+	
 	
 }
