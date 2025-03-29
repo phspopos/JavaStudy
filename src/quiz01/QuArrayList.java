@@ -10,7 +10,8 @@ import common.Student;
 ※ex17collection 패키지에서 작성하세요.
 
 문제1) QuArrayList.java 
-사용자로부터 이름을 입력받아 그 이름으로 검색해서 인덱스 위치(indexOf사용)를 알아내서 해당 인덱스로 그 객체를 삭제하고 삭제된 객체의 정보(이름,나이,학번)를 출력하여라.
+사용자로부터 이름을 입력받아 그 이름으로 검색해서 인덱스 위치(indexOf사용)를 알아내서 
+해당 인덱스로 그 객체를 삭제하고 삭제된 객체의 정보(이름,나이,학번)를 출력하여라.
 
 샘플코드]
 public static void main(String[] args) {
@@ -137,10 +138,17 @@ public class QuArrayList {
 		
 		
 		//int age = 0;
+		
+		//System.out.println( " === "+list.get(2).getName().indexOf("다길동") );
 		/*
 		for( Student s : list ) {
-			int age = s.getName().indexOf(name);
-			System.out.println("age = " + age);
+			int num = s.getName().indexOf(name);
+			System.out.println("num = " + num);
+			
+			if( num == 0  ) {
+				System.out.println("들어오나");
+				//list.remove(s);
+			}
 			
 		}
 		//int age = list.indexOf(name);
@@ -152,12 +160,22 @@ public class QuArrayList {
 		Student s2 = null;
 		for( int i = 0; i < list.size(); i++ ) {		 
 			
+			/*
+			if( list.get(i).getName().equals(name) ) {
+				System.out.println("====");
+			}
+			//int a = list.indexOf(); 
+			
+			//System.out.println("a = " + a);
+			*/
+			
 			if( name.equals( list.get(i).getName() ) ) {
 				//list.remove( list.get(i) );
 				s2 = (Student)list.get(i);				
 				list.remove(i);
 				check = true;
-			}			
+				
+			}	
 		}	
 		
 		
