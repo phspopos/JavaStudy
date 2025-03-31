@@ -71,6 +71,19 @@ public class Ex04HashSet1 {
 		 정할 수 없다.		  
 		 */
 		
+		/*
+		Iterator<Object> it = set.iterator();
+		while( it.hasNext() ) {
+			Object obj = it.next();
+			
+			if( obj instanceof Teacher ) {				
+				System.out.println(" 이름 : "+ ((Teacher)obj).getName() );				
+				
+			}else {
+				System.out.println(obj);
+			}
+		}
+		*/
 		//1.set참조변수를 통해 Iterator 인스턴스 생성
 		Iterator<Object> itr = set.iterator();
 		

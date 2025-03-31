@@ -85,6 +85,14 @@ public class Ex05TreeSetMain {
 		// 4개 출력됨
 		System.out.println("저장된 데이터 수 : " + tree1.size() +"개");
 		
+		
+		Iterator<Integer> it2 = tree1.iterator();
+		
+		while( it2.hasNext() ) {
+			System.out.print("잘나옴 : "+ it2.next() + " " );
+		}
+		System.out.println();
+		
 		//이터레이터로 출력하면 오름차순으로 정렬된다.
 		Iterator<Integer> itr = tree1.iterator();
 		while( itr.hasNext() ) {
