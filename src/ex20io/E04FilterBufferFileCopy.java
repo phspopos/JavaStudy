@@ -34,11 +34,14 @@ public class E04FilterBufferFileCopy {
 			버퍼 필터 스트림을 통해 파일을 읽어 저장하므로, 읽기/쓰기
 			속도가 매우 빠르다.
 			 */
-			while(true) {			
+			while(true) {
+				
 				bData = bufIn.read();				
+				
 				if(bData==-1) {
 					break;
 				}
+				
 				bufOut.write(bData);
 				copyByte++;
 			}		

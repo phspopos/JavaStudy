@@ -24,8 +24,8 @@ public class E03FilterDataStream {
 			
 			/*
 			 앞에서 생성한 출력스트림에 필터스트림까지 추가로 연결한
-			 후  write ()통해 숫자데이터를 전송하여 저장한다.
-			 해다 데이터를 바이트단위로 분리해서 4byte 혹은 8byte
+			 후  write() 통해 숫자데이터를 전송하여 저장한다.
+			 해당 데이터를 바이트단위로 분리해서 4byte 혹은 8byte
 			 를 전송하게 된다. 
 			 */
 			filterOut.writeInt( 123 );
