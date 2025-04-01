@@ -18,7 +18,7 @@ public class E07FileReaderStream {
 			//txt파일을 대상으로 문자 입력 스트림을 생성
 			Reader in = new FileReader("src/ex20io/alpha.txt");
 			/*
-			  배열 cbuf의 앞에서부터 최대 10개의 문자를 읽어 저장
+			  배열 cbuf의 앞에서부터 최대 10개의 문장를 읽어 저장
 			  한다.
 			 */
 			readCnt = in.read( cbuf, 0, 10 );
