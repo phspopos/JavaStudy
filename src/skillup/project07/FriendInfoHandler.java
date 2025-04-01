@@ -68,9 +68,16 @@ public class FriendInfoHandler {
 			ObjectOutputStream out = new ObjectOutputStream(
 				new FileOutputStream("src/skillup/project07/myfriend_info.obj")	);
 			
+			System.out.println( "입력된 사이즈 : "+myFriends.size());
+			
+			
+			for( int i = 0; i < myFriends.size(); i++ ) {
+				out.writeObject( (Friend)myFriends.get(i) );
+			}
+			/*
 			for( Friend fr : myFriends ) {
 				out.writeObject(fr);
-			}
+			}*/
 			System.out.println("잘온다");
 		}catch( Exception e ) {
 			System.out.println("친구정보 직렬화 중 예외발생");
@@ -85,11 +92,14 @@ public class FriendInfoHandler {
 			ObjectInputStream in = new ObjectInputStream(
 					new FileInputStream("src/skillup/project07/myfriend_info.obj"));
 			
-			while( true ) {
+			int i = myFriends.size();
+			
+			while( i >= 0  ) {
 				System.out.println("77 :  " + in.readObject());  
 				Friend fr = (Friend)in.readObject();
 				myFriends.add(fr);
 				
+				i--;
 			}
 			
 		}catch( Exception e ) {
