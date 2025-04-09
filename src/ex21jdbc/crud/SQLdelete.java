@@ -19,7 +19,7 @@ public class SQLdelete extends MyConnection {
 		try {
 			
 			stmt = con.createStatement();
-			query = "DELETE FROM member WHERE id='test1'";
+			query = "DELETE FROM member WHERE id='test3'";
 			result = stmt.executeUpdate(query);
 			System.out.println( result + "행 삭제됨");
 			
@@ -38,7 +38,7 @@ public class SQLdelete extends MyConnection {
 	}
 	
 	public static void main(String[] args) {
-		new SQLdelete("study" , "1234").dbExecute();
+		new SQLdelete("education" , "1234").dbExecute();
 	}
 
 }
