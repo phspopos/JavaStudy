@@ -46,7 +46,7 @@ public class SQLselect1 extends MyConnection {
 				String name = rs.getString("name");
 				
 				/*
-				 오라클릐 date타입을 getDate()로 인출하면
+				 오라클의 date타입을 getDate()로 인출하면
 				 0000-00-00 형식으로 출력된다. 또한 자료형이 Date 
 				 이므로 java.sql.Date 패키지의 클래스를 사용해야 한다. 
 				 */

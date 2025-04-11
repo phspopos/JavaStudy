@@ -57,7 +57,7 @@ public class SQLinsert extends MyConnection {
 				preparedStatement 인터페이스
 				: 인파라미터가 있는 동적쿼리문 실행할때 사용한다. 인파라미터는
 				?로 표시하고, 인스턴스 생성 이후 setXX() 메서드를 통해
-				설정한다. 인덱슨느 1부터 시작한다.
+				설정한다. 인덱스는 1부터 시작한다.
 			 */
 			psmt = con.prepareStatement(query);			
 			

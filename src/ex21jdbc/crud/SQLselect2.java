@@ -26,7 +26,8 @@ public class SQLselect2 extends MyConnection {
 				  연산자를 추가해서 쿼리문 작성해야 한다. 
 				 */
 				String sql = "SELECT * FROM member "
-						//+ " WHERE name LIKE '%?%'";	// 부적합한 열 인덱스 에러
+						//+ " WHERE name LIKE '%?%'";	// 부적합한 열 인덱스 에
+						//+ " WHERE name LIKE '%'?'%'";	
 						+ " WHERE name LIKE '%'||?||'%'";
 				
 				psmt = con.prepareStatement(sql);
