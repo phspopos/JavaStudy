@@ -27,7 +27,7 @@ public class SelectShop extends MyConnection{
 			regidate date,
 			p_code number			  
 			 */
-			sql = "select g_idx, goods_name, to_char( goods_price, '999,999' ) as goods_price, "
+			sql = "select g_idx, goods_name, ltrim( to_char( goods_price, '999,999' ) ) as goods_price, "
 					+ " to_char( regidate, 'yyyy-mm-dd hh24:mi') as regidate , p_code from sh_goods "
 					+ " where goods_name like '%"+inputValue("제품명")+"%'";
 			
